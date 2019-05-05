@@ -1,0 +1,129 @@
+.container {
+    max-width: calc(100% - 200px);
+    position: fixed;
+    right: 0;
+}
+
+nav.side-menu {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background: #24292e; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+    overflow: auto;
+    display: inline-block;
+    padding-top: 120px;
+    left: 0;
+}
+
+ul.menu {
+    width: 100%;
+    display: inline-block;
+    min-height: calc(100% - 355px);
+    background: #343a40;
+}
+
+ul.menu li {
+    width: 100%;
+    list-style: none;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    line-height: 56px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+ul.menu li:hover, ul.menu li:focus, ul.menu li.active, ul.menu li.has-sub-menu.open {
+    background: #6c757d;
+}
+
+ul.menu li a i {
+    float: left;
+    margin-right: 6px;
+}
+
+ul.sub-menu {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    float: left;
+    -moz-transition: max-height 0.15s ease-out;
+    -webkit-transition: max-height 0.15s ease-out;
+    -o-transition: max-height 0.15s ease-out;
+    transition: max-height 0.15s ease-out;
+}
+
+li.has-sub-menu.open ul.sub-menu {
+    -moz-transition: max-height 0.25s ease-in;
+    -webkit-transition: max-height 0.25s ease-in;
+    -o-transition: max-height 0.25s ease-in;
+    transition: max-height 0.25s ease-in;
+}
+
+ul.sub-menu li {
+    background: #24292e;
+    padding-left: 30px;
+}
+
+ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    line-height: 56px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+/* --------------- USER MENU ------------- */
+
+.user-menu {
+    background: #24292e;
+    width: 100%;
+    top: -100px;
+    position: relative;
+    display: inline-block;
+}
+
+ul.user-menu li {
+    width: 100%;
+    list-style: none;
+}
+
+ul.user-menu li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    line-height: 56px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+ul.user-menu li img {
+    width: 100px;
+    height: 100px;
+}
+
+ul.user-menu li:hover, ul.menu li:focus, ul.menu li.active, ul.menu li.has-sub-menu.open {
+    background: #6c757d;
+}
+
+ul.user-menu li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+ul.user-menu li a i {
+    float: right;
+    margin-right: 0px;
+    font-size: 22px;
+}
+
+
+
