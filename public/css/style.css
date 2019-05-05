@@ -51,22 +51,25 @@ ul.sub-menu {
     max-height: 0;
     overflow: hidden;
     float: left;
-    -moz-transition: max-height 0.15s ease-out;
-    -webkit-transition: max-height 0.15s ease-out;
-    -o-transition: max-height 0.15s ease-out;
-    transition: max-height 0.15s ease-out;
+    -moz-transition: max-height 0.25s ease-out;
+    -webkit-transition: max-height 0.25s ease-out;
+    -o-transition: max-height 0.25s ease-out;
+    transition: max-height 0.25s ease-out;
 }
 
-li.has-sub-menu.open ul.sub-menu {
-    -moz-transition: max-height 0.25s ease-in;
-    -webkit-transition: max-height 0.25s ease-in;
-    -o-transition: max-height 0.25s ease-in;
-    transition: max-height 0.25s ease-in;
+ul.sub-menu.open {
+    height: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    float: left;
+    -moz-transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -o-transition: max-height 1s ease-out;
+    transition: max-height 1s ease-out;
 }
 
 ul.sub-menu li {
     background: #24292e;
-    padding-left: 30px;
 }
 
 ul.sub-menu li a {
@@ -76,6 +79,7 @@ ul.sub-menu li a {
     line-height: 56px;
     font-size: 15px;
     padding: 5px;
+    padding-left: 30px;
 }
 
 
